@@ -1,4 +1,4 @@
-# "Guide" the VisionLanguage Model to "Think" like DeepSeek-R1
+# "Guide" the Vision Language Model to "Think" like DeepSeek-R1
 
 In this project, we have successfully explored an efficient and cost-effective method to enable a Vision Language Model (VLM) to possess the deep thinking and reasoning capabilities similar to those of DeepSeek-R1 at a low cost, by utilizing limited GPU resources.
 
@@ -7,7 +7,7 @@ We adopt a unique data processing strategy to handle the original SFT (Supervise
 
 ## Project File Structure
 - **`ModifyThinkingContent.py`**: This script is responsible for modifying the inference content containing images, endowing the SFT data with "thinking" elements, and it is an important step in constructing the COT data.
-- **`DistilabelPipelineImage.py`**: Handles the processing of image data. During the model training and inference processes, it comprehensively preprocesses and extracts features from the input images, helping the model to accurately understand the image information.
+- **`DistilabelPipelineImage.py`**: Handles the processing of conversation with image data.
 - **`DistilabelPipeline.py`**: Handles pure text conversations.
 - **`data/`**: The directory for storing data.
 
@@ -49,11 +49,13 @@ vllm serve /path/model --dtype auto --port 8000 --limit_mm_per_prompt image=4 --
 
 <image src="./assets/demo6.png" /> 
 
+## Citation
+
 ```bibtex
 @misc{deepseek-r1-vision,
   author = {Baolin Chen},
-  title = {lets think like r1},
+  title = {deepseek-r1-vision},
   year = {2025},
-  howpublished = {\url{https://github.com/sungatetop/lets-think-like-r1.git}}
+  howpublished = {\url{https://github.com/sungatetop/deepseek-r1-vision.git}}
 }
 ```
