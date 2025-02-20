@@ -6,9 +6,9 @@ In this project, we have successfully explored an efficient and cost-effective m
 We adopt a unique data processing strategy to handle the original SFT (Supervised Fine-Tuning, question-answer pairs) data. By transforming the SFT data into content that includes the "thinking" process, we form a COT (Chain of Thought, question-think-answer chain) data structure. Subsequently, we use the SFT method to train the visual model, skillfully "guiding" the model to learn how to "think".
 
 ## Project File Structure
-- **`ModifyThinkingContent.py`**: This script is responsible for modifying the inference content containing images, endowing the SFT data with "thinking" elements, and it is an important step in constructing the COT data.
 - **`DistilabelPipelineImage.py`**: Handles the processing of conversation with image data.
 - **`DistilabelPipeline.py`**: Handles pure text conversations.
+- **`ModifyThinkingContent.py`**: This script is responsible for modifying the inference content containing images, endowing the SFT data with "thinking" elements, and it is an important step in constructing the COT data for conversation with images.
 - **`data/`**: The directory for storing data.
 
 ## Model Acquisition Method
@@ -37,11 +37,6 @@ vllm serve /path/model --dtype auto --port 8000 --limit_mm_per_prompt image=4 --
 
 # Some Results
 
-<image src="./assets/demo1.png" />
-
-<image src="./assets/demo2.png" />
-
-<image src="./assets/demo3.png" />
 
 <image src="./assets/demo4.png" />
 
