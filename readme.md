@@ -17,6 +17,11 @@ The model used in this project can be downloaded through the following link: [ht
 ## SFT Training
 We use llama-factory for SFT training. For full-parameter fine-tuning, please refer to llama-factory. The parameter scripts are `./qwen2vl_full_sft.yaml`, `qwen2vl_full_sft.yaml`.
 
+## evaluation
+we sft finetuning qwen2-vl model by using domain datasets, and continue training by using cot data(this repo method).
+
+see repo: https://github.com/sungatetop/geology-lvlm.git
+
 ## Inference:
 ### Notic: pull the latest llama-factory!
 Copy the .yaml file to the corresponding directory of llama-factory
