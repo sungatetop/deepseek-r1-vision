@@ -53,7 +53,7 @@ vllm serve /path/model --dtype auto --port 8000 --limit_mm_per_prompt image=4 --
 
 ```bibtex
 @misc{deepseek-r1-vision,
-  author = {Baolin Chen},
+  author = {Baolin Chen,Jiawei Xie},
   title = {deepseek-r1-vision},
   year = {2025},
   howpublished = {\url{https://github.com/sungatetop/deepseek-r1-vision.git}}
